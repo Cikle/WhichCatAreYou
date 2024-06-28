@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Which Cat Are You?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Which Cat Are You?</h1>
+        <form id="cat-quiz">
+            <label for="social">Are you a social person?</label>
+            <input type="range" id="social" name="social" min="0" max="5">
+            
+            <label for="energetic">Are you energetic?</label>
+            <input type="range" id="energetic" name="energetic" min="0" max="5">
+            
+            <label for="independent">Are you independent?</label>
+            <input type="range" id="independent" name="independent" min="0" max="5">
+            
+            <button type="button" onclick="calculateCat()">Find Out</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
